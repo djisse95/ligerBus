@@ -1,0 +1,88 @@
+/* Empty. Add your own CSS if you like */
+.padding{
+	padding: 0;
+}
+
+
+ion-content{
+	background-color: #bcb9a9;
+	border-radius: 1px;
+}
+.headling{
+	font-family: Verdana;
+	font-size: 30px;
+	color: black;
+	text-align: center;
+	padding: 10px 0px;
+	background-color: #009999;
+	margin: 10px 0px 10px 0px;
+
+}
+.text{
+height: 50px;
+color: white;
+background: linear-gradient(#ff6600,#cc5200);
+font-size: 30px;
+padding-top: 10px;
+text-align: center;
+margin-bottom: 0;
+-webkit-box-shadow: 0px -7px 29px -12px rgba(0,0,0,0.84);
+-moz-box-shadow: 0px -7px 29px -12px rgba(0,0,0,0.84);
+box-shadow: 0px -7px 29px -12px rgba(0,0,0,0.84);
+}
+
+img{
+	width: 25px;
+	height: auto;
+	position: relative;
+	margin-right: 10px;
+}
+
+.selector{
+	background-color:#009999;
+	width:100%;
+	font-size:20px;
+	margin-bottom: 10px;
+}
+
+.button{
+	color: white;
+	border:0 ;
+	border-radius: 5px;
+	font-size: 20px;
+	width: 30%;
+	height: 30px;
+	position: absolute;
+	margin: 0 35%;
+	-webkit-box-shadow: 0px -7px 29px -12px rgba(0,0,0,0.84);
+	-moz-box-shadow: 0px -7px 29px -12px rgba(0,0,0,0.84);
+	box-shadow: 0px -7px 29px -12px rgba(0,0,0,0.84);
+	background: linear-gradient(#008000,#009900);
+
+}
+.button:active{
+	background: linear-gradient(#009900,#008000);
+}
+.button-box{
+width: 100%;
+margin-bottom: 10px;
+padding: 0;
+
+
+}
+.option-button{
+	color: black;
+	height: 40px;
+	min-width: 80px;
+	width: 30%;
+	border: 0;
+	position: relative;
+	background-color: #009999;
+	font-size: 150%;
+ 	text-align: center;
+ 	margin-left: 2%;
+	
+}
+.option-button:active{
+background-color: #ff6600;
+}
