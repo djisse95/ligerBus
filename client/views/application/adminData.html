@@ -1,0 +1,24 @@
+<template name="adminData">
+<table>
+	<tr>
+		
+		<th>Line</th>
+		<th>Station</th>
+		<th>Status</th>
+		<th>Time of leavin</th>
+		<th>Time</th>
+		<th>Action</th>
+	</tr>
+	{{#each events}}
+	<tr>
+		
+		<td>{{line}}</td>
+		<td>{{station}}</td>
+		<td>{{status}}</td>
+		<td>{{time}}</td>
+		<td>{{currentTime}}</td>
+		<td><a href="" id="delete">Delete</a> / <a href="" id="update">Update</a></td>
+	</tr>
+	{{/each}}
+</table>
+</template>
