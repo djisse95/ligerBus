@@ -11,6 +11,14 @@ Meteor.methods({
 		console.log('Inserted with succsess!');
 		events.insert(eventToInsert);
 
+		HTTP.call("POST", "localhost:3000/create/event",
+          {data: {myevent: eventToInsert}},
+          function (error, result) {
+            
+          });
+
+
+
 	},
 	deleteEvent: function(id_event){
 		events.remove({_id:id_event});
