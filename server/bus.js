@@ -11,7 +11,7 @@ Meteor.methods({
 		console.log('Inserted with succsess!');
 		events.insert(eventToInsert);
 
-		HTTP.call("POST", "localhost:4000/create/event",
+		HTTP.call("POST", "http://192.168.0.9:4000/create/event",
           {data: {myevent: eventToInsert}},
           function (error, result) {
             
