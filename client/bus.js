@@ -9,6 +9,16 @@ Template.selection.events({
 	}
 
 });
+
+
+Template.plivo.events({
+	'click #send': function(e,tpl){
+		var message=$("#message").val()
+		Meteor.call('sendTextMessage',message);
+		alert('SENT!');
+
+	}
+});
 Template.bus.events({
 	'click #leaving': function(e,tpl){
 		Session.set('status','leaving');
