@@ -26,12 +26,7 @@ Meteor.methods({
 		console.log('Delted from server captain!');
 	},
 	sendTextMessage: function(message){
-			/*HTTP.call("POST", "https://api.plivo.com/v1/Account/NDAyZjcxZDhmZTI4OTEyNzAxNGE2MjlmMmQ5MmIx/Message/",
-          {data: {src: '+855966549623',dst:'+855886697345',text:message}},
-          function (error, result) {
-            	console.log(JSON.stringify(result));
-            	console.log(error);
-          });*/
+		
 
 plivo = Plivo.RestAPI({
     authId: 'MANGIXNDBLYZQWMDLHZM',
@@ -39,9 +34,9 @@ plivo = Plivo.RestAPI({
   });
 
   var params = {
-      'src': '+855966549623', // Caller Id
-      'dst' : '+855886697345', // User Number to Call
-      'text' : message,
+      'src': '+855886697345', // Caller Id
+      'dst' : message.number, // User Number to Call
+      'text' : message.message,
       'type' : "sms",
   };
 
