@@ -44,7 +44,7 @@ plivo = Plivo.RestAPI({
       console.log('Status: ', status);
       console.log('API Response:\n', response);
   });
-
+  	return 'SENT!';
 	}
 });
 
