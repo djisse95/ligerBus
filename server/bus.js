@@ -27,16 +27,16 @@ Meteor.methods({
 	},
 	sendTextMessage: function(message){
 		
-
+		console.log('Sending text message');
 plivo = Plivo.RestAPI({
     authId: 'MANGIXNDBLYZQWMDLHZM',
     authToken: 'NDAyZjcxZDhmZTI4OTEyNzAxNGE2MjlmMmQ5MmIx',
   });
-
+	console.log('to '+message.number);
   var params = {
       'src': '+855886697345', // Caller Id
       'dst' : message.number, // User Number to Call
-      'text' : message.message,
+      'text' : 'TEST',
       'type' : "sms",
   };
 
