@@ -26,24 +26,29 @@ Meteor.methods({
 		console.log('Delted from server captain!');
 	},
 	sendTextMessage: function(message){
-		
-		console.log('Sending text message');
-plivo = Plivo.RestAPI({
-    authId: 'MANGIXNDBLYZQWMDLHZM',
-    authToken: 'NDAyZjcxZDhmZTI4OTEyNzAxNGE2MjlmMmQ5MmIx',
-  });
-	console.log('to '+message.number);
-  var params = {
-      'src': '+855886697345', // Caller Id
-      'dst' : message.number, // User Number to Call
-      'text' : 'TEST',
-      'type' : "sms",
-  };
 
-  plivo.send_message(params, function (status, response) {
-      console.log('Status: ', status);
-      console.log('API Response:\n', response);
-  });
+
+		var e=events.find({},{sort: {currentTime: -1, limit: 1}}).fetch()[0];
+		var text="Hi,\n Your bus line "+ e.line+ " is currently "+e.status+" at "+e.station;
+
+		console.log('Sending text message');
+
+		plivo = Plivo.RestAPI({
+		    authId: 'MANGIXNDBLYZQWMDLHZM',
+		    authToken: 'NDAyZjcxZDhmZTI4OTEyNzAxNGE2MjlmMmQ5MmIx',
+		  });
+		console.log('to '+message.number);
+		  var params = {
+		      'src': '+855886697345', // Caller Id
+		      'dst' : message.number, // User Number to Call
+		      'text' : text,
+		      'type' : "sms",
+		  };
+
+	  plivo.send_message(params, function (status, response) {
+	      console.log('Status: ', status);
+	      console.log('API Response:\n', response);
+	  });
   	return 'SENT!';
 	}
 });
