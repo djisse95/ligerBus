@@ -29,7 +29,14 @@ Meteor.methods({
 
 
 		var e=events.find({},{sort: {currentTime: -1, limit: 1}}).fetch()[0];
-		var text="Hi,\n Your bus line "+ e.line+ " is currently "+e.status+" at "+e.station;
+		var date=new Date(e.currentTime);
+var currentDate=convertDate(e.currentTime);
+
+		var text="Hi,\nYour bus line "+ e.line+ " is currently "+e.status+" at "+e.station+".\n"+currentDate;
+
+		
+
+
 
 		console.log('Sending text message');
 
