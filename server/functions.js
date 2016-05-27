@@ -1,5 +1,5 @@
 convertDate = function (time){
-		var date=new Date(e.currentTime);
+		var date=new Date(time);
     
     
     var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 	'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
