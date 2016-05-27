@@ -42,7 +42,7 @@ Meteor.methods({
 				var text="Hi,\nYour bus line "+ e.line+ " is currently "+e.status+" at "+e.station+".\n"+currentDate;
 			}
 			
-		}
+		
 
 		console.log('Sending text message');
 
