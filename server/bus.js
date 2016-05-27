@@ -33,7 +33,7 @@ Meteor.methods({
 
 
 
-			var e=events.find({station:stopA},{sort: {currentTime: -1, limit: 1}}).fetch();
+			var e=events.find({ "station": { $regex: new RegExp(stopA, "i") } },{sort: {currentTime: -1, limit: 1}}).fetch();
 			if(e.length==0){
 				var text="NO DATA";
 			}
