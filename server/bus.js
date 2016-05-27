@@ -27,16 +27,27 @@ Meteor.methods({
 	},
 	sendTextMessage: function(message){
 
-
-		var e=events.find({},{sort: {currentTime: -1, limit: 1}}).fetch()[0];
-		var date=new Date(e.currentTime);
-var currentDate=convertDate(e.currentTime);
-
-		var text="Hi,\nYour bus line "+ e.line+ " is currently "+e.status+" at "+e.station+".\n"+currentDate;
-
-		
+		if(message.message.split(':').length==2){
+			var stopA=message.message.split(':')[0];
+			var stopB=message.message.split(':')[1];
 
 
+
+			var e=events.find({station:stopA},{sort: {currentTime: -1, limit: 1}}).fetch();
+			if(e.length==0){
+				var text="NO DATA";
+			}
+			else{
+				e=e[0];
+				var date=new Date(e.currentTime);
+				var currentDate=convertDate(e.currentTime);
+
+				var text="Hi,\nYour bus line "+ e.line+ " is currently "+e.status+" at "+e.station+".\n"+currentDate;
+			}
+			
+		}else{
+			var text="Error! You should write following this pattern: bus-stopA:bus-stopB";
+		}
 
 		console.log('Sending text message');
 
