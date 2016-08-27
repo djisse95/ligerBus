@@ -52,21 +52,22 @@ Meteor.methods({
 		
 			var stopA=message.message;
 			
-			var e=events.find({ "bus": { $regex: new RegExp(stopA, "i") } },{sort: {currentTime: -1, limit: 1}}).fetch();
+			var e=events.find({ "bus": { $regex: new RegExp(stopA, "i") } },{sort: {time: -1, limit: 1}}).fetch();
 			if(e.length==0){
 				var text="NO DATA";
 			}
 			else{
 				e=e[0];
-				var date=new Date(e.currentTime);
+				var date=new Date(e.time);
 				var currentDate=convertDate(e.currentTime);
 
-				var text="Hi,\nYour bus line "+ e.line+ " is currently "+e.status+" at "+e.station+".\n"+currentDate;
+				var text="Hi,\n"+ e.bus+ " is currently "+e.status+" at "+e.station+".\n"+currentDate;
 			}
 			
 		
 
 		console.log('Sending text message');
+		console.log(text);
 
 		plivo = Plivo.RestAPI({
 		    authId: 'MANGIXNDBLYZQWMDLHZM',
