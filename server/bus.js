@@ -21,6 +21,28 @@ Meteor.methods({
 
 
 	},
+		saveEvent: function(bus,station,status){
+		//JSON
+		var time=Date.now();
+		var eventToInsert={
+			'bus':bus,
+			'station':station,
+			'status':status,
+			'time':time
+		};
+		console.log('Inserted with succsess!');
+		events.insert(eventToInsert);
+		//meteor add http
+		
+		HTTP.call("POST", "http://188.166.223.208/create/event",
+          {data: {myevent: eventToInsert}},
+          function (error, result) {
+            
+          });
+
+
+
+	},
 	deleteEvent: function(id_event){
 		events.remove({_id:id_event});
 		console.log('Delted from server captain!');
@@ -30,7 +52,7 @@ Meteor.methods({
 		
 			var stopA=message.message;
 			
-			var e=events.find({ "station": { $regex: new RegExp(stopA, "i") } },{sort: {currentTime: -1, limit: 1}}).fetch();
+			var e=events.find({ "bus": { $regex: new RegExp(stopA, "i") } },{sort: {currentTime: -1, limit: 1}}).fetch();
 			if(e.length==0){
 				var text="NO DATA";
 			}

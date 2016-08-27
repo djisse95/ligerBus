@@ -10,6 +10,25 @@ Template.selection.events({
 
 });
 
+Template.enregistrement.helpers({
+	bus: function(){
+		return bus.find({});
+	},
+	stations: function(){
+		return station.find({});
+	}
+});
+
+
+Template.enregistrement.events({
+	'click #save':function(e,tpl){
+		var bus=$("#bus").val();
+		var station=$("#station").val();
+		var status=$("#status").val();
+		console.log('Saving '+bus+'/ '+station+' /'+status);
+		Meteor.call('saveEvent',bus,station,status);
+	}
+});
 
 Template.plivo.events({
 	'click #send': function(e,tpl){

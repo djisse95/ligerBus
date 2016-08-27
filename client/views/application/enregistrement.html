@@ -1,0 +1,36 @@
+<template name="enregistrement">
+<h3 class="headling">First Page</h3>
+
+
+<p class="text"><img src="/img/Polyline-48.png"/>Bus name:</p> 
+
+<select class="selector" id="bus">
+  {{#each bus}}
+  	<option>{{name}}</option>
+  {{/each}}
+</select>
+<p></p>
+<p class="text"><img src="/img/Time-48.png"/>Station:</p> 
+<select class="selector" id="station">
+ {{#each stations}}
+<option>{{name}}</option>
+ {{/each}}
+
+</select>
+
+
+
+<p class="text"><img src="/img/Time-48.png"/>Event:</p> 
+<select class="selector" id="status">
+ 
+<option>Is leaving</option>
+
+<option>Has left</option>
+
+<option>Will arrive</option>
+</select>
+
+<button class="button" id="save">Next</button>
+
+</template>
+
