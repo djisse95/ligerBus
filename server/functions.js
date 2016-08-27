@@ -1,16 +1,17 @@
 convertDate = function (time){
-	time=time/1000;
-	var date=new Date(time);
-    
-    
-    var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 	'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    var days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-   var dayOfTheWeek=days[date.getDay()];
-   var monthOfYear=months[date.getMonth()];
-   
-   var hours=date.getHours();
-   var minutes=date.getMinutes();
-   
-   return dayOfTheWeek+ " "+date.getDay()+" "+monthOfYear+" at "+hours+"h"+minutes+ "min";
-  
+	var current=Date.now();
+	var delta=current-time;
+	var seconde=delta/1000;
+  if(seconde<60)
+  	return Math.round(seconde)+" seconds ago.";
+	var minute=seconde/60;
+	if(minute<60)
+		return Math.round(minute)+" minutes ago.";
+	var hours=minute/60;
+	if(hours<24)
+		return Math.round(hours)+" hours ago.";
+	var days=hours/24;
+	return Math.round(days)+" days ago.";
+	
+	
 }
