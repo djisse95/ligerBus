@@ -1,6 +1,7 @@
 convertDate = function (time){
 	var twenty=22*60*1000;
-	var current=Date.now()+3600000-twenty;
+	var intervall=22*1000;
+	var current=Date.now()+3600000-twenty+intervall;
 	var delta=current-time;
 	var seconde=delta/1000;
   if(seconde<60)
