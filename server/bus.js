@@ -49,8 +49,9 @@ Meteor.methods({
 			}
 			else{
 				e=e[0];
-				var date=new Date(e.time);
 				var currentDate=convertDate(e.time);
+				console.log('Now is '+Date.now());
+				console.log('Event is '+e.time);
 				var text="Hi,\n"+ e.bus+ " is currently "+e.status+" at "+e.station+".\n"+currentDate;
 			}
 
