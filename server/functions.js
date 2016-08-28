@@ -1,5 +1,5 @@
 convertDate = function (time){
-	var twenty=23*60*1000;
+	var twenty=22*60*1000;
 	var current=Date.now()+3600000-twenty;
 	var delta=current-time;
 	var seconde=delta/1000;
