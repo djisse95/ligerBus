@@ -20,8 +20,7 @@ Meteor.methods({
 
 
 
-	},
-		saveEvent: function(bus,station,status){
+	},saveEvent: function(bus,station,status){
 		//JSON
 		var time=Date.now();
 		var eventToInsert={
@@ -33,40 +32,29 @@ Meteor.methods({
 		console.log('Inserted with succsess!');
 		events.insert(eventToInsert);
 		//meteor add http
-		
 		HTTP.call("POST", "http://188.166.223.208/create/event",
           {data: {myevent: eventToInsert}},
           function (error, result) {
-            
           });
-
-
-
 	},
 	deleteEvent: function(id_event){
 		events.remove({_id:id_event});
 		console.log('Delted from server captain!');
 	},
 	sendTextMessage: function(message){
-
-		
-			var stopA=message.message;
-			
-			var e=events.find({ "bus": { $regex: new RegExp(stopA, "i") } },{sort: {time: -1, limit: 1}}).fetch();
+			var busname=message.message;
+			var e=events.find({ "bus": busname },{sort: {time: -1, limit: 1}}).fetch();
 			if(e.length==0){
 				var text="NO DATA";
 			}
 			else{
 				e=e[0];
 				var date=new Date(e.time);
-				var currentDate=convertDate(e.currentTime);
-
+				var currentDate=convertDate(e.time);
 				var text="Hi,\n"+ e.bus+ " is currently "+e.status+" at "+e.station+".\n"+currentDate;
 			}
-			
-		
 
-		console.log('Sending text message');
+			console.log('Sending text message');
 		console.log(text);
 
 		plivo = Plivo.RestAPI({
