@@ -13,12 +13,44 @@ Template.selection.events({
 Template.enregistrement.helpers({
 	bus: function(){
 		return bus.find({});
-	},
-	stations: function(){
-		return station.find({});
 	}
+	
+	/*
+	stations:
+		[
+			{"station":"{{_\"kien_svay\"}}"},
+			{"station":"kokir_market"},
+			{"station":"sdau_danlaeng_pagoda"},
+			{"station":"somroeng_thom_market"},
+			{"station":"neak_loerng"},
+			{"station":"kampong_soeng_market"},
+			{"station":"lvea_market"},
+			{"station":"kampong_trabeak"},
+			{"station":"kor_ndaeuk_market"},
+			{"station":"kraol_kou"},
+			{"station":"svay_chrum_market"},
+			{"station":"thma_sa"},
+			{"station":"svay_rieng_university"},
+			{"station":"svay_rieng_town"},
+			{"station":"prasaut"},
+			{"station":"chiphu"},
+			{"station":"bavet_town"}
+		]
+		*/
+	
 });
 
+
+
+
+
+
+
+if (Meteor.isClient) {
+  Meteor.startup(function () {
+    TAPi18n.setLanguage("kh");
+  });
+}
 
 Template.enregistrement.events({
 	'click #save':function(e,tpl){
@@ -27,7 +59,14 @@ Template.enregistrement.events({
 		var status=$("#status").val();
 		console.log('Saving '+bus+'/ '+station+' /'+status);
 		Meteor.call('saveEvent',bus,station,status);
+	},
+	'click #kh-lang': function(e,tpl){
+		TAPi18n.setLanguage("kh");
+	},
+	'click #en-lang': function(e,tpl){
+		TAPi18n.setLanguage("en");
 	}
+
 });
 
 Template.plivo.events({
@@ -35,8 +74,9 @@ Template.plivo.events({
 		var message=$("#message").val()
 		Meteor.call('sendTextMessage',message);
 		alert('SENT!');
-
 	}
+
+
 });
 Template.bus.events({
 	'click #leaving': function(e,tpl){

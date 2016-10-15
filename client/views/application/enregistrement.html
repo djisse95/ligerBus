@@ -1,36 +1,49 @@
 <template name="enregistrement">
-<h3 class="headling">First Page</h3>
+<h3 class="headling">{{_"tostov"}}</h3>
+<button id="kh-lang">ខ្មែរ</button><button id="en-lang">English</button>
 
-
-<p class="text"><img src="/img/Polyline-48.png"/>Bus name:</p> 
-
+<p class="text"><img src="/img/Polyline-48.png"/>{{_ "bus_name"}}:</p> 
 <select class="selector" id="bus">
   {{#each bus}}
   	<option>{{name}}</option>
   {{/each}}
 </select>
 <p></p>
-<p class="text"><img src="/img/Time-48.png"/>Station:</p> 
+<p class="text"><img src="/img/Time-48.png"/>{{_ "station"}}:</p> 
 <select class="selector" id="station">
- {{#each stations}}
-<option>{{name}}</option>
- {{/each}}
+	 <option>{{_"kien_svay"}}</option>
+	 <option>{{_"kokir_market"}}</option>
+	 <option>{{_"sdau_danlaeng_pagoda"}}</option>
+	 <option>{{_"somroeng_thom_market"}}</option>
+	 <option>{{_"neak_loerng"}}</option>
+	 <option>{{_"kampong_soeng_market"}}</option>
+	 <option>{{_"lvea_market"}}</option>
+	 <option>{{_"kampong_trabeak"}}</option>
+	 <option>{{_"kor_ndaeuk_market"}}</option>
+	 <option>{{_"kraol_kou"}}</option>
+	 <option>{{_"svay_chrum_market"}}</option>
+	 <option>{{_"thma_sa"}}</option>
+	 <option>{{_"svay_rieng_university"}}</option>
+	 <option>{{_"svay_rieng_town"}}</option>
+	 <option>{{_"prasaut"}}</option>
+	 <option>{{_"chiphu"}}</option>
+	 <option>{{_"bavet_town"}}</option>
 
 </select>
 
 
 
-<p class="text"><img src="/img/Time-48.png"/>Event:</p> 
+<p class="text"><img src="/img/Time-48.png"/>{{_ "event"}}:</p> 
 <select class="selector" id="status">
  
-<option>Is leaving</option>
+<option>{{_ "leave"}}</option>
 
-<option>Has left</option>
+<option>{{_ "arrive"}}</option>
 
-<option>Will arrive</option>
+<option>{{_ "left"}}</option>
 </select>
 
-<button class="button" id="save">Next</button>
+<button class="button" id="save">{{_ "post"}}</button>
 
 </template>
 
