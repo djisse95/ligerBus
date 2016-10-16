@@ -1,15 +1,94 @@
 <template name="enregistrement">
-<h3 class="headling">{{_"tostov"}}</h3>
-<button id="kh-lang">ខ្មែរ</button><button id="en-lang">English</button>
 
-<p class="text"><img src="/img/Polyline-48.png"/>{{_ "bus_name"}}:</p> 
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-lg-12 topBar">
+			<div class="col-lg-6 col-lg-push-3 col-md-8 col-sm-12 info">
+
+				<div class="page-header">
+					<img src="/img/tos-tovfinal.png" width="30%" />
+					<button class="lang-btn btn" id="en-lang">English</button>
+					<button class="lang-btn btn" id="kh-lang">ភាសាខ្មែរ</button>
+				</div>
+				
+				<div class="col-xs-12" id="firstInner">
+					<h1 class="h3">{{_"bus_line"}}:</h1>
+
+					<select class="form-control col-lg-12 col-md-12 col-xs-12" id="selectFirst">
+						<option value="bavet-phnompenh">{{_"bavet_pp"}}</option>
+						<option value="svayreang-phnompenh">{{_"svayreang_pp"}}</option>
+						<option value="phnompenh-bavet">{{_"pp_bavet"}}</option>
+						<option value="phnompenh-svayreang">{{_"pp_svayreang"}}</option>
+					</select>
+				</div>
+
+				<div class="col-xs-12" id="secondInner">
+					<h1 class="h3">{{_"station"}}:</h1>
+					<select class="form-control select" id="selectSecond">
+						<option>{{_"kien_svay"}}</option>
+						<option>{{_"kokir_market"}}</option>
+						<option>{{_"sdau_danlaeng_pagoda"}}</option>
+						<option>{{_"somroeng_thom_market"}}</option>
+						<option>{{_"neak_loerng"}}</option>
+						<option>{{_"kampong_soeng_market"}}</option>
+						<option>{{_"lvea_market"}}</option>
+						<option>{{_"kampong_trabeak"}}</option>
+						<option>{{_"kor_ndaeuk_market"}}</option>
+						<option>{{_"kraol_kou"}}</option>
+						<option>{{_"svay_chrum_market"}}</option>
+						<option>{{_"thma_sa"}}</option>
+						<option>{{_"svay_rieng_university"}}</option>
+						<option>{{_"svay_rieng_town"}}</option>
+						<option>{{_"prasaut"}}</option>
+						<option>{{_"chiphu"}}</option>
+						 <option>{{_"bavet_town"}}</option>
+					</select>
+				</div>
+
+				<div class="col-xs-12" id="thirdInner">
+					<h1 class="h3">{{_"event"}}:</h1>
+					<select class="form-control select" id="selectThird">
+						<option>{{_ "leave"}}</option>
+						<option>{{_ "arrive"}}</option>
+						<option>{{_ "left"}}</option>
+					</select>
+				</div>
+				
+				<button id="next" class="col-lg-12 btn btn-success">{{_"post"}}</button>
+			</div>
+		</div>
+		
+	</div>
+				
+</div>
+
+
+
+</template>
+
+
+
+<!--
+<div class="container-fluid">
+	<div class="page-header">
+	<img src="/img/tos-tovfinal.png" width="40%">
+
+	<button id="en-lang" style="font-family: 'Bayon';">English</button>
+	<button id="kh-lang" style="font-family: 'Bayon';">ភាសាខ្មែរ</button>
+
+
+ </div>
+
+
+<div>
+<p class="text" style="font-family: 'Bayon';">{{_ "bus_name"}}:</p> 
 <select class="selector" id="bus">
   {{#each bus}}
-  	<option>{{name}}</option>
+  	<option style="font-family: 'Bayon';">{{name}}</option>
   {{/each}}
 </select>
 <p></p>
-<p class="text"><img src="/img/Time-48.png"/>{{_ "station"}}:</p> 
+<p class="text" style="font-family: 'Bayon';">{{_ "station"}}:</p> 
 <select class="selector" id="station">
 	 <option>{{_"kien_svay"}}</option>
 	 <option>{{_"kokir_market"}}</option>
@@ -33,7 +112,7 @@
 
 
 
-<p class="text"><img src="/img/Time-48.png"/>{{_ "event"}}:</p> 
+<p class="text">{{_ "event"}}:</p> 
 <select class="selector" id="status">
  
 <option>{{_ "leave"}}</option>
@@ -45,5 +124,9 @@
 
 <button class="button" id="save">{{_ "post"}}</button>
 
-</template>
+</div>
+</div>
+-->
+
+
 

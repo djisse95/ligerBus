@@ -23,5 +23,10 @@
 	"leave":"Is Leaving",
 	"arrive":"Will Arrive",
 	"left":"Has Left",
-	"tostov" : "Tos Tov"
+	"tostov" : "Tos Tov",
+	"bus_line" : "Bus Line",
+	"bavet_pp" : "Bavet ↔ Phnom Penh",
+	"svayreang_pp" : "Svay Reang ↔ Phnom Penh",
+	"pp_bavet" : "Phnom Penh ↔ Bavet",
+	"pp_svayreang" : "Phnom Penh ↔ Svay Reang"
 }
