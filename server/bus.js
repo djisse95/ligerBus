@@ -27,7 +27,7 @@ Meteor.methods({
 			'bus':bus,
 			'station':station,
 			'status':status,
-			'time':time
+			'time':Date.now()
 		};
 		console.log('Inserted with succsess!');
 		events.insert(eventToInsert);
@@ -73,7 +73,7 @@ Meteor.methods({
 				var text="Hi,\n"+ e.bus+ " "+e.status+" at "+e.station+".\n"+currentDate;
 			}
 
-			console.log('Sending text message');
+			console.log('Sending text message:'+text);
 			
 			return text;
 		}
