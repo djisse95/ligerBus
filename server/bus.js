@@ -42,6 +42,8 @@ Meteor.methods({
 		console.log('Delted from server captain!');
 	},
 	processSMS: function(message){
+		message=message.replace(' ','');
+		message=message.toLowerCase();
 		if(message=="info"){
 			var msg="";
 			var myArray = events.find().fetch();
@@ -58,7 +60,8 @@ Meteor.methods({
 			var msg='Welcome to Tos Tov\nGet info about bus: Send "bus line". Ex: send "Kep-Kampot"\nSend "info" to get the list of bus lines.';
 			return msg;
 		}else{
-			var e=events.find({ "bus": busname },{sort: {time: -1, limit: 1}}).fetch();
+			var busname=message;
+			var e=events.find({ "bus": busname },{sort: {time: -1,limit:1}}).fetch();
 			if(e.length==0){
 				var text="NO DATA";
 			}
@@ -67,7 +70,7 @@ Meteor.methods({
 				var currentDate=convertDate(e.time);
 				console.log('Now is '+Date.now());
 				console.log('Event is '+e.time);
-				var text="Hi,\n"+ e.bus+ " is currently "+e.status+" at "+e.station+".\n"+currentDate;
+				var text="Hi,\n"+ e.bus+ " "+e.status+" at "+e.station+".\n"+currentDate;
 			}
 
 			console.log('Sending text message');
