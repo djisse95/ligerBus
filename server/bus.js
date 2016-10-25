@@ -41,8 +41,23 @@ Meteor.methods({
 		events.remove({_id:id_event});
 		console.log('Delted from server captain!');
 	},
-	sendTextMessage: function(message){
-			var busname=message.message;
+	processSMS: function(message){
+		if(message=="info"){
+			var msg="";
+			var myArray = events.find().fetch();
+			console.log(myArray.length);
+			var distinctArray = _.uniq(myArray, false, function(d) {return d.bus});
+			console.log(distinctArray.length);
+			var disctinctValues = _.pluck(distinctArray, 'bus');
+			console.log(disctinctValues.length);
+			for(var i=0;i<disctinctValues.length;i++){
+				msg=msg+disctinctValues[i]+'\n';
+			}
+			return msg;
+		}else if(message=="help"){
+			var msg='Welcome to Tos Tov\nGet info about bus: Send "bus line". Ex: send "Kep-Kampot"\nSend "info" to get the list of bus lines.';
+			return msg;
+		}else{
 			var e=events.find({ "bus": busname },{sort: {time: -1, limit: 1}}).fetch();
 			if(e.length==0){
 				var text="NO DATA";
@@ -56,7 +71,17 @@ Meteor.methods({
 			}
 
 			console.log('Sending text message');
-		console.log(text);
+			
+			return text;
+		}
+
+
+	},
+	sendTextMessage: function(message){
+		var busname=message.message;
+			
+
+		var text=Meteor.call('processSMS',message.message);
 
 		plivo = Plivo.RestAPI({
 		    authId: 'MANGIXNDBLYZQWMDLHZM',
