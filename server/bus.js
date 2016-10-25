@@ -12,11 +12,11 @@ Meteor.methods({
 		events.insert(eventToInsert);
 		//meteor add http
 		
-		HTTP.call("POST", "http://tostov.tk/create/event",
+		/*HTTP.call("POST", "http://tostov.tk/create/event",
           {data: {myevent: eventToInsert}},
           function (error, result) {
             
-          });
+          });*/
 
 
 
@@ -32,10 +32,10 @@ Meteor.methods({
 		console.log('Inserted with succsess!');
 		events.insert(eventToInsert);
 		//meteor add http
-		HTTP.call("POST", "http://tostov.tk/create/event",
+		/*HTTP.call("POST", "http://tostov.tk/create/event",
           {data: {myevent: eventToInsert}},
           function (error, result) {
-          });
+          });*/
 	},
 	deleteEvent: function(id_event){
 		events.remove({_id:id_event});
