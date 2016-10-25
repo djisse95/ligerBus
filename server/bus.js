@@ -6,7 +6,7 @@ Meteor.methods({
 			'station':station,
 			'status':status,
 			'currentTime':currentTime,
-			'time':time
+			'time':Date.now()
 		};
 		console.log('Inserted with succsess!');
 		events.insert(eventToInsert);
