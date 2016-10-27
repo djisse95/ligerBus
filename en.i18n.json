@@ -28,5 +28,6 @@
 	"bavet_pp" : "Bavet → Phnom Penh",
 	"svayreang_pp" : "Svay Reang → Phnom Penh",
 	"pp_bavet" : "Phnom Penh → Bavet",
-	"pp_svayreang" : "Phnom Penh → Svay Reang"
+	"pp_svayreang" : "Phnom Penh → Svay Reang",
+	"update_message" : "The update has been sent!"
 }

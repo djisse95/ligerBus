@@ -40,32 +40,38 @@ Template.enregistrement.helpers({
 	
 });
 
-
-
-
-
-
-
 if (Meteor.isClient) {
   Meteor.startup(function () {
-    TAPi18n.setLanguage("kh");
-  });
-}
 
+    TAPi18n.setLanguage("kh");
+    
+  });
+  
+}
+Template.enregistrement.rendered = function(){
+  $('#notify').hide();
+};
 Template.enregistrement.events({
 	'click #save':function(e,tpl){
 		var bus=$("#bus").val();
 		var station=$("#station").val();
 		var status=$("#status").val();
+		
 		console.log('Saving '+bus+'/ '+station+' /'+status);
 		Meteor.call('saveEvent',bus,station,status);
+		$("#notify").show( "slow");
+		setTimeout(function(){
+    		$('#notify').hide( "slow");
+		}, 2500);
+			
+
 	},
 	'click #kh-lang': function(e,tpl){
 		TAPi18n.setLanguage("kh");
 	},
 	'click #en-lang': function(e,tpl){
 		TAPi18n.setLanguage("en");
-	}
+	},
 
 });
 
