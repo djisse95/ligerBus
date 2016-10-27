@@ -11,10 +11,10 @@
 					<button class="lang-btn btn" id="kh-lang" width="30%">ភាសាខ្មែរ</button>
 				</div>
 				
-				<div class="col-xs-12" id="firstInner">
+				<div id="firstInner">
 					<h1 class="h3">{{_"bus_line"}}:</h1>
 
-					<select class="form-control col-lg-12 col-md-12 col-xs-12" id="bus">
+					<select class="form-control" id="bus">
 						<option value="bavet-phnompenh">{{_"bavet_pp"}}</option>
 						<option value="svayreang-phnompenh">{{_"svayreang_pp"}}</option>
 						<option value="phnompenh-bavet">{{_"pp_bavet"}}</option>
@@ -22,7 +22,7 @@
 					</select>
 				</div>
 
-				<div class="col-xs-12" id="secondInner">
+				<div id="secondInner">
 					<h1 class="h3">{{_"station"}}:</h1>
 					<select class="form-control select" id="station">
 						<option value="kien svay">{{_"kien_svay"}}</option>
@@ -43,7 +43,7 @@
 					</select>
 				</div>
 
-				<div class="col-xs-12" id="thirdInner">
+				<div id="thirdInner">
 					<h1 class="h3">{{_"event"}}:</h1>
 					<select class="form-control select" id="status">
 						<option value="is leaving">{{_ "leave"}}</option>
@@ -52,10 +52,9 @@
 					</select>
 				</div>
 				
-				<div class="col-xs-12">
-					<button id="save" class="col-lg-12 btn btn-success">{{_"post"}}</button>
-					<p style="color: green; margin-top: 60px; text-align: center;" classs="col-lg-12" id="notify">{{_"update_message"}}</p>
-				</div>	
+				<button id="save" class="col-lg-12 btn btn-success">{{_"post"}}</button>
+				<p style="color: green; margin-top: 60px; text-align: center;" classs="col-lg-12" id="notify">{{_"update_message"}}</p>
+					
 			</div>
 		</div>
 		
