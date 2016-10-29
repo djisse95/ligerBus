@@ -13,44 +13,26 @@ Template.selection.events({
 Template.enregistrement.helpers({
 	bus: function(){
 		return bus.find({});
+	},
+
+	station: function(){
+		return station.find({"line": Session.get('line')}, {fields: {name: 1, "order": 1, "value" :1, i18n: 1}})
+		//{"line": Session.get('line')}
 	}
-	
-	/*
-	stations:
-		[
-			{"station":"{{_\"kien_svay\"}}"},
-			{"station":"kokir_market"},
-			{"station":"sdau_danlaeng_pagoda"},
-			{"station":"somroeng_thom_market"},
-			{"station":"neak_loerng"},
-			{"station":"kampong_soeng_market"},
-			{"station":"lvea_market"},
-			{"station":"kampong_trabeak"},
-			{"station":"kor_ndaeuk_market"},
-			{"station":"kraol_kou"},
-			{"station":"svay_chrum_market"},
-			{"station":"thma_sa"},
-			{"station":"svay_rieng_university"},
-			{"station":"svay_rieng_town"},
-			{"station":"prasaut"},
-			{"station":"chiphu"},
-			{"station":"bavet_town"}
-		]
-		*/
 	
 });
 
 if (Meteor.isClient) {
   Meteor.startup(function () {
-
     TAPi18n.setLanguage("kh");
-    
+    Session.set('line', 'bavet-phnompenh');
   });
   
 }
 Template.enregistrement.rendered = function(){
   $('#notify').hide();
 };
+
 Template.enregistrement.events({
 	'click #save':function(e,tpl){
 		var bus=$("#bus").val();
@@ -72,6 +54,11 @@ Template.enregistrement.events({
 	'click #en-lang': function(e,tpl){
 		TAPi18n.setLanguage("en");
 	},
+	'change #bus': function(e,tpl){
+		var line = $('#bus').val();
+		Session.set('line', line);
+		console.log(Session.get('line'));
+	}
 
 });
 

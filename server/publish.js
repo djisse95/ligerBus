@@ -7,6 +7,6 @@ Meteor.publish("bus", function() {
     return bus.find({});
 });
 
-Meteor.publish("station", function() { 
-    return station.find({});
+TAPi18n.publish("station", function() { 
+    return station.i18nFind({});
 });

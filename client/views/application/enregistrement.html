@@ -16,7 +16,7 @@
 
 					<select class="form-control" id="bus">
 						<option value="bavet-phnompenh">{{_"bavet_pp"}}</option>
-						<option value="svayreang-phnompenh">{{_"svayreang_pp"}}</option>
+						<option value="svayrieng-phnompenh">{{_"svayreang_pp"}}</option>
 						<option value="phnompenh-bavet">{{_"pp_bavet"}}</option>
 						<option value="phnompenh-svayreang">{{_"pp_svayreang"}}</option>
 					</select>
@@ -25,6 +25,11 @@
 				<div id="secondInner" class="col-lg-12 col-md-12 col-sm-12">
 					<h1 class="h3">{{_"station"}}:</h1>
 					<select class="form-control select" id="station">
+					{{#each station}}
+						<option value="{{value}}">{{order}}. {{name}}</option>
+					{{/each}}
+					</select>
+						<!--
 						<option value="kien svay">{{_"kien_svay"}}</option>
 						<option value="kokir market">{{_"kokir_market"}}</option>
 						<option value="somroeng thom market">{{_"somroeng_thom_market"}}</option>
@@ -41,6 +46,7 @@
 						<option value="chiphu">{{_"chiphu"}}</option>
 						<option value="bavet town">{{_"bavet_town"}}</option>
 					</select>
+					!-->
 				</div>
 
 				<div id="thirdInner" class="col-lg-12 col-md-12 col-sm-12">
