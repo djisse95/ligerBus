@@ -4,36 +4,6 @@
 	width: 60%;
 }
 
-/*Second*/
-.firstPage{
-	top: -5vh;
-}
-.topBar{
-	height: 20vh;
-	background: #4285F4;
-}
-
-.info{
-	top: 5vh;
-	background: white;
-	box-shadow: 0px 0px 10px grey;
-	padding: 25px;
-	height: 90vh;
-}
-
-
-
-
-#busLine{
-	font-size: 3.5vmin;
-	top: 17vmin;
-}
-#selectBusLine{ 
-	top: 9vh;
-	width: 80vmin;
-	height: 7vmin;
-	font-size: 2.5vmin;
-}
 
 .lang-btn {
 	float: right;
@@ -44,6 +14,11 @@
 .page-header {
 	padding: 10px;
 	margin-top: 0px;
+}
+.background-box {
+	position: relative;
+	height: 20vh;
+	background: #4285F4;
 }
 
 
@@ -57,8 +32,3 @@
     padding-bottom: 100px;
 }
 
-.background-box {
-	position: relative;
-	height: 20vh;
-	background: #4285F4;
-}
