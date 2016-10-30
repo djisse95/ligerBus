@@ -82,11 +82,16 @@ border-width: : 1px;
 }
 
 input[type="radio"]:checked + label::before{
-	content: url(/img/tick-sign.png);
-	width: 16px;
-	height: 16px;
 	position: absolute;
 	left: 20px;
+
+	display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    content: "";
+    background: url(/img/tick-sign.svg) no-repeat 0 0;
+    background-size: 100%;
 }
 
 body{
