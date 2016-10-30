@@ -61,7 +61,7 @@
 .background-box {
 	position: relative;
 	height: 20vh;
-	background: #4285F4;
+	background: #007AFF;
 }
 
 input[type="radio"] {
@@ -70,21 +70,16 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked + label{
-	background: #4285F4;
-}
-input[type="radio"] + label{
-	text-align: left;
+	background: #007AFF;
+	color: white;
 }
 
 input[type="radio"]:checked + label::before{
-	content: "\2714 \2008 \2008 \2008";
-	text-align: left;
+	content: "\2714";
+	position: absolute;
+	left: 20px;
 }
 
-input[type="radio"] + label::before{
-	content: "\2008 \2008 \2008 \2008 \2008 \2008";
-	text-align: left;
-}
 
 body{
 	font-family: 'Roboto';
