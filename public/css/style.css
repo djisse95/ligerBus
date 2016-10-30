@@ -78,6 +78,7 @@ input[type="radio"]:checked + label::before{
 	content: "\2714";
 	position: absolute;
 	left: 20px;
+	color: white;
 }
 
 
