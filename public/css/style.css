@@ -76,12 +76,13 @@ input[type="radio"]:checked + label{
 
 input[type="radio"] + label{
 background: white;
-border-radius: 5px;
+border-radius: 3px;
 border-color: #adadad;
+border-width: 1px;
 }
 
 input[type="radio"]:checked + label::before{
-	content: "\2713";
+	content: url(/img/correct-symbol1.png);
 	position: absolute;
 	left: 20px;
 }
