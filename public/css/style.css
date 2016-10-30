@@ -73,6 +73,10 @@ input[type="radio"]:checked + label{
 	background: #007AFF;
 	color: white;
 }
+.btn-default:hover {
+    color: #333;
+    background-color: #ffffff;
+}
 
 input[type="radio"]:checked + label::before{
 	content: "\2713";
