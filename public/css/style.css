@@ -76,13 +76,19 @@ input[type="radio"]:checked + label{
 
 input[type="radio"] + label{
 background: white;
-border-radius: 5px;
+border-radius: 3px;
 border-color: #adadad;
 border-width: : 1px;
 }
 
 input[type="radio"]:checked + label::before{
-	content: "\2714";
+	content: url(/img/tick-sign.png);
+	width: 16px;
+	height: 16px;
 	position: absolute;
 	left: 20px;
+}
+
+body{
+	font-family: 'Roboto';
 }
