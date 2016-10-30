@@ -62,3 +62,21 @@
 	height: 20vh;
 	background: #4285F4;
 }
+
+input[type="radio"] {
+    visibility:hidden;
+    display: none;
+}
+
+input[type="radio"]:checked + label{
+	background: #4285F4;
+}
+
+input[type="radio"]:checked + label::before{
+	content: "\2714";
+	text-align: left;
+	position: absolute;
+	left: 20px;
+}
+
+

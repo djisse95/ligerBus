@@ -37,7 +37,7 @@ Template.enregistrement.events({
 	'click #save':function(e,tpl){
 		var bus=$("#bus").val();
 		var station=$("#station").val();
-		var status=$("#status").val();
+		var status=$('input[name="status"]:checked').val();
 		
 		console.log('Saving '+bus+'/ '+station+' /'+status);
 		Meteor.call('saveEvent',bus,station,status);

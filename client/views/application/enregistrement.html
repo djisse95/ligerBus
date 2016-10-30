@@ -4,7 +4,7 @@
 	<div class="row background-box">
 		
 	</div>
-	<div class="row content-box col-lg-6 col-md-6 col-sm-12 col-lg-push-3 col-md-push-3">
+	<div class="content-box col-lg-6 col-md-6 col-sm-12 col-lg-push-3 col-md-push-3">
 				<div class="col-lg-12 col-md-12 col-sm-12 page-header">
 					<img src="/img/tos-tovfinal.png" width="30%" />
 					<button class="lang-btn btn" id="en-lang" width="30%">English</button>
@@ -51,12 +51,14 @@
 
 				<div class="col-lg-12 col-md-12 col-sm-12">
 					<h1 class="h3">{{_"event"}}:</h1>
-					<select class="form-control select" id="status">
-						<option value="is leaving">{{_ "leave"}}</option>
-						<option value="will arrive">{{_ "arrive"}}</option>
-						<option value="has left">{{_ "left"}}</option>
-					</select>
-				</div>
+
+					<input type="radio" name="status" id="leave" value="is leaving" checked="checked"><label class="col-lg-4 col-md-4 col-sm-4 col-xs-12 btn btn-default" for="leave">{{_"leave"}}</label>
+					
+					<input type="radio" name="status" id="arrive" value="will arrive"><label class="btn btn-default col-lg-4 col-md-4 col-sm-4 col-xs-12" for="arrive">{{_"arrive"}}</label>
+					
+					<input type="radio" name="status" id="left" value="has left"><label class="btn btn-default col-lg-4 col-md-4 col-sm-4 col-xs-12" for="left">{{_"left"}}</label>
+	
+    			</div>
 					
 				<button id="save" class="col-lg-4 col-md-4 col-sm-4 btn btn-success">{{_"post"}}</button>
 				<p class="col-lg-12 col-md-12 col-sm-12" style="color: green; margin-top: 60px; text-align: center;" id="notify">{{_"update_message"}}</p>
