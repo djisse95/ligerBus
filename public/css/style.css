@@ -39,7 +39,7 @@
 	float: right;
 	margin-left: 10px;
 	font-size: 10px;
-	cursor:pointer;
+	cursor:pointer;	
 }
 
 .page-header {
@@ -72,14 +72,19 @@ input[type="radio"] {
 input[type="radio"]:checked + label{
 	background: #4285F4;
 }
-
-input[type="radio"]:checked + label::before{
-	content: "\2714";
+input[type="radio"] + label{
 	text-align: left;
-	position: absolute;
-	left: 20px;
 }
 
+input[type="radio"]:checked + label::before{
+	content: "\2714 \2008 \2008 \2008";
+	text-align: left;
+}
+
+input[type="radio"] + label::before{
+	content: "\2008 \2008 \2008 \2008 \2008 \2008";
+	text-align: left;
+}
 
 body{
 	font-family: 'Roboto';
