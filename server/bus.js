@@ -44,6 +44,7 @@ Meteor.methods({
 	processSMS: function(message){
 		message=message.replace(' ','');
 		message=message.toLowerCase();
+		message=filterShortCode(message);
 		if(message=="info"){
 			var msg="";
 			var myArray = events.find().fetch();

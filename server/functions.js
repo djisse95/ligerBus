@@ -42,7 +42,7 @@ filterShortcode = function(message) {
 		newMessage += "-";
 
 		if (sta2.length == 1) {
-			newMessage += sta2[0].station2;
+			newMessage += sta2[0].station12;
 		}else{
 			newMessage += station2;
 		}
