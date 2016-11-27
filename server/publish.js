@@ -10,3 +10,8 @@ Meteor.publish("bus", function() {
 TAPi18n.publish("station", function() { 
     return station.i18nFind({});
 });
+
+Meteor.publish("shortcode", function() { 
+	console.log("nb bus"+shortcode.find({}).count());
+    return shortcode.find({});
+});

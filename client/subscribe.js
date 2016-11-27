@@ -7,3 +7,5 @@ Template.enregistrement.onCreated(function bodyOnCreated(){
     Meteor.subscribe('bus');
     console.log('subscribing finish!');
 });
+
+Meteor.subscribe('shortcode');
