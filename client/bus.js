@@ -31,7 +31,6 @@ if (Meteor.isClient) {
 }
 Template.enregistrement.rendered = function(){
   $('#notify').hide();
-  
 };
 
 Template.enregistrement.events({
