@@ -1,6 +1,5 @@
-/* 1 */
+
 {
-    "_id" : ObjectId("581405a80627cb00a8be7ff2"),
     "name" : "Phnom Penh",
     "line" : "phnompenh-svayreang",
     "value" : "phnom penh",
@@ -12,9 +11,8 @@
     }
 }
 
-/* 2 */
+
 {
-    "_id" : ObjectId("581405a80627cb00a8be7ff3"),
     "name" : "Kien Svay",
     "line" : "phnompenh-svayreang",
     "value" : "kien svay",
@@ -26,9 +24,8 @@
     }
 }
 
-/* 3 */
+
 {
-    "_id" : ObjectId("581405a80627cb00a8be7ff4"),
     "name" : "Kokir Market",
     "line" : "phnompenh-svayreang",
     "value" : "kokir market",
@@ -40,9 +37,8 @@
     }
 }
 
-/* 4 */
+
 {
-    "_id" : ObjectId("581405a80627cb00a8be7ff5"),
     "name" : "Sdau Danlaeng Pagoda",
     "line" : "phnompenh-svayreang",
     "value" : "sdau danlaeng pagoda",
@@ -54,9 +50,8 @@
     }
 }
 
-/* 5 */
+
 {
-    "_id" : ObjectId("581405a80627cb00a8be7ff6"),
     "name" : "Som Roeng Thom Market",
     "line" : "phnompenh-svayreang",
     "value" : "somroeng thom market",
@@ -68,9 +63,8 @@
     }
 }
 
-/* 6 */
+
 {
-    "_id" : ObjectId("581405a80627cb00a8be7ff7"),
     "name" : "Neak Loeurng",
     "line" : "phnompenh-svayreang",
     "value" : "neak loeurng",
@@ -82,9 +76,8 @@
     }
 }
 
-/* 7 */
+
 {
-    "_id" : ObjectId("581405a80627cb00a8be7ff8"),
     "name" : "Kampong Soeng Market",
     "line" : "phnompenh-svayreang",
     "value" : "kampong soeng market",
@@ -96,9 +89,8 @@
     }
 }
 
-/* 8 */
+
 {
-    "_id" : ObjectId("581405a80627cb00a8be7ff9"),
     "name" : "Lvea Market",
     "line" : "phnompenh-svayreang",
     "value" : "lvea market",
@@ -110,9 +102,8 @@
     }
 }
 
-/* 9 */
+
 {
-    "_id" : ObjectId("581405a80627cb00a8be7ffa"),
     "name" : "Kampong Trabeck",
     "line" : "phnompenh-svayreang",
     "value" : "kampong trabeck",
@@ -124,9 +115,8 @@
     }
 }
 
-/* 10 */
+ 
 {
-    "_id" : ObjectId("581405a80627cb00a8be7ffb"),
     "name" : "Kor Andaeuk Market",
     "line" : "phnompenh-svayreang",
     "value" : "kor andaeuk market",
@@ -138,9 +128,8 @@
     }
 }
 
-/* 11 */
+ 
 {
-    "_id" : ObjectId("581405a80627cb00a8be7ffc"),
     "name" : "Kraol Kou",
     "line" : "phnompenh-svayreang",
     "value" : "kraol kou",
@@ -152,9 +141,8 @@
     }
 }
 
-/* 12 */
+ 
 {
-    "_id" : ObjectId("581405a80627cb00a8be7ffd"),
     "name" : "Svay Chrum Market",
     "line" : "phnompenh-svayreang",
     "value" : "svay chrum market",
@@ -166,9 +154,8 @@
     }
 }
 
-/* 13 */
+ 
 {
-    "_id" : ObjectId("581405a80627cb00a8be7ffe"),
     "name" : "Svay Rieng University",
     "line" : "phnompenh-svayreang",
     "value" : "svay rieng university",
@@ -180,9 +167,8 @@
     }
 }
 
-/* 14 */
+ 
 {
-    "_id" : ObjectId("58140a9c0627cb00a8be8000"),
     "name" : "Phnom Penh",
     "line" : "phnompenh-bavet",
     "value" : "phnom penh",
@@ -194,9 +180,8 @@
     }
 }
 
-/* 15 */
+ 
 {
-    "_id" : ObjectId("58140a9c0627cb00a8be8001"),
     "name" : "Kien Svay",
     "line" : "phnompenh-bavet",
     "value" : "kien svay",
@@ -208,9 +193,8 @@
     }
 }
 
-/* 16 */
+ 
 {
-    "_id" : ObjectId("58140a9c0627cb00a8be8002"),
     "name" : "Kokir Market",
     "line" : "phnompenh-bavet",
     "value" : "kokir market",
@@ -222,9 +206,8 @@
     }
 }
 
-/* 17 */
+ 
 {
-    "_id" : ObjectId("58140a9c0627cb00a8be8003"),
     "name" : "Sdau Danlaeng Pagoda",
     "line" : "phnompenh-bavet",
     "value" : "sdau danlaeng pagoda",
@@ -236,9 +219,8 @@
     }
 }
 
-/* 18 */
+ 
 {
-    "_id" : ObjectId("58140a9c0627cb00a8be8004"),
     "name" : "Som Roeng Thom Market",
     "line" : "phnompenh-bavet",
     "value" : "somroeng thom market",
@@ -250,9 +232,8 @@
     }
 }
 
-/* 19 */
+ 
 {
-    "_id" : ObjectId("58140a9c0627cb00a8be8005"),
     "name" : "Neak Loeurng",
     "line" : "phnompenh-bavet",
     "value" : "neak loeurng",
@@ -264,9 +245,8 @@
     }
 }
 
-/* 20 */
+ 
 {
-    "_id" : ObjectId("58140a9c0627cb00a8be8006"),
     "name" : "Kampong Soeng Market",
     "line" : "phnompenh-bavet",
     "value" : "kampong soeng market",
@@ -278,9 +258,8 @@
     }
 }
 
-/* 21 */
+ 
 {
-    "_id" : ObjectId("58140a9c0627cb00a8be8007"),
     "name" : "Lvea Market",
     "line" : "phnompenh-bavet",
     "value" : "lvea market",
@@ -292,9 +271,8 @@
     }
 }
 
-/* 22 */
+ 
 {
-    "_id" : ObjectId("58140a9c0627cb00a8be8008"),
     "name" : "Kampong Trabeck",
     "line" : "phnompenh-bavet",
     "value" : "kampong trabeck",
@@ -306,9 +284,8 @@
     }
 }
 
-/* 23 */
+ 
 {
-    "_id" : ObjectId("58140a9c0627cb00a8be8009"),
     "name" : "Kor Andaeuk Market",
     "line" : "phnompenh-bavet",
     "value" : "kor andaeuk market",
@@ -320,9 +297,8 @@
     }
 }
 
-/* 24 */
+ 
 {
-    "_id" : ObjectId("58140a9c0627cb00a8be800a"),
     "name" : "Kraol Kou",
     "line" : "phnompenh-bavet",
     "value" : "kraol kou",
@@ -334,9 +310,8 @@
     }
 }
 
-/* 25 */
+ 
 {
-    "_id" : ObjectId("58140a9c0627cb00a8be800b"),
     "name" : "Svay Chrum Market",
     "line" : "phnompenh-bavet",
     "value" : "svay chrum market",
@@ -348,9 +323,8 @@
     }
 }
 
-/* 26 */
+ 
 {
-    "_id" : ObjectId("58140a9c0627cb00a8be800c"),
     "name" : "Svay Rieng University",
     "line" : "phnompenh-bavet",
     "value" : "svay rieng university",
@@ -362,9 +336,8 @@
     }
 }
 
-/* 27 */
+ 
 {
-    "_id" : ObjectId("58140a9c0627cb00a8be800d"),
     "name" : "Krong Svay Rieng",
     "line" : "phnompenh-bavet",
     "value" : "krong svay rieng",
@@ -376,9 +349,8 @@
     }
 }
 
-/* 28 */
+ 
 {
-    "_id" : ObjectId("58140a9c0627cb00a8be800e"),
     "name" : "Prasaut",
     "line" : "phnompenh-bavet",
     "value" : "prasaut",
@@ -390,9 +362,8 @@
     }
 }
 
-/* 29 */
+ 
 {
-    "_id" : ObjectId("58140a9c0627cb00a8be800f"),
     "name" : "Chiphu",
     "line" : "phnompenh-bavet",
     "value" : "chiphu",
@@ -404,9 +375,8 @@
     }
 }
 
-/* 30 */
+ 
 {
-    "_id" : ObjectId("58140a9c0627cb00a8be8010"),
     "name" : "Bavet",
     "line" : "phnompenh-bavet",
     "value" : "bavet",
@@ -418,9 +388,8 @@
     }
 }
 
-/* 31 */
+ 
 {
-    "_id" : ObjectId("581405a80627cb00a8be7fff"),
     "name" : "Krong Svay Rieng",
     "line" : "phnompenh-svayreang",
     "value" : "krong svay rieng",
@@ -432,9 +401,8 @@
     }
 }
 
-/* 32 */
+ 
 {
-    "_id" : ObjectId("58140e1f0627cb00a8be8011"),
     "name" : "Bavet",
     "line" : "bavet-phnompenh",
     "value" : "bavet",
@@ -446,9 +414,8 @@
     }
 }
 
-/* 33 */
+ 
 {
-    "_id" : ObjectId("58140e1f0627cb00a8be8012"),
     "name" : "Chiphu",
     "line" : "bavet-phnompenh",
     "value" : "chiphu",
@@ -460,9 +427,8 @@
     }
 }
 
-/* 34 */
+ 
 {
-    "_id" : ObjectId("58140e1f0627cb00a8be8013"),
     "name" : "Prasaut",
     "line" : "bavet-phnompenh",
     "value" : "prasaut",
@@ -474,9 +440,8 @@
     }
 }
 
-/* 35 */
+ 
 {
-    "_id" : ObjectId("58140e1f0627cb00a8be8014"),
     "name" : "Krong Svay Rieng",
     "line" : "bavet-phnompenh",
     "value" : "krong svay rieng",
@@ -488,9 +453,8 @@
     }
 }
 
-/* 36 */
+ 
 {
-    "_id" : ObjectId("58140e1f0627cb00a8be8015"),
     "name" : "Svay Rieng University",
     "line" : "bavet-phnompenh",
     "value" : "svay rieng university",
@@ -502,9 +466,8 @@
     }
 }
 
-/* 37 */
+ 
 {
-    "_id" : ObjectId("58140e1f0627cb00a8be8016"),
     "name" : "Svay Chrum Market",
     "line" : "bavet-phnompenh",
     "value" : "svay chrum market",
@@ -516,9 +479,8 @@
     }
 }
 
-/* 38 */
+ 
 {
-    "_id" : ObjectId("58140e1f0627cb00a8be8017"),
     "name" : "Kraol Kou",
     "line" : "bavet-phnompenh",
     "value" : "kraol kou",
@@ -530,9 +492,8 @@
     }
 }
 
-/* 39 */
+ 
 {
-    "_id" : ObjectId("58140e1f0627cb00a8be8018"),
     "name" : "Kor Andaeuk Market",
     "line" : "bavet-phnompenh",
     "value" : "kor andaeuk market",
@@ -544,9 +505,8 @@
     }
 }
 
-/* 40 */
+ 
 {
-    "_id" : ObjectId("58140e1f0627cb00a8be8019"),
     "name" : "Kampong Trabeck",
     "line" : "bavet-phnompenh",
     "value" : "kampong trabeck",
@@ -558,9 +518,8 @@
     }
 }
 
-/* 41 */
+ 
 {
-    "_id" : ObjectId("58140e1f0627cb00a8be801a"),
     "name" : "Lvea Market",
     "line" : "bavet-phnompenh",
     "value" : "lvea market",
@@ -572,9 +531,8 @@
     }
 }
 
-/* 42 */
+ 
 {
-    "_id" : ObjectId("58140e1f0627cb00a8be801b"),
     "name" : "Kampong Soeng Market",
     "line" : "bavet-phnompenh",
     "value" : "kampong soeng market",
@@ -586,9 +544,8 @@
     }
 }
 
-/* 43 */
+ 
 {
-    "_id" : ObjectId("58140e1f0627cb00a8be801c"),
     "name" : "Neak Loeurng",
     "line" : "bavet-phnompenh",
     "value" : "neak loeurng",
@@ -600,9 +557,8 @@
     }
 }
 
-/* 44 */
+ 
 {
-    "_id" : ObjectId("58140e1f0627cb00a8be801d"),
     "name" : "Som Roeng Thom Market",
     "line" : "bavet-phnompenh",
     "value" : "somroeng thom market",
@@ -614,9 +570,8 @@
     }
 }
 
-/* 45 */
+ 
 {
-    "_id" : ObjectId("58140e1f0627cb00a8be801e"),
     "name" : "Sdau Danlaeng Pagoda",
     "line" : "bavet-phnompenh",
     "value" : "sdau danlaeng pagoda",
@@ -628,9 +583,8 @@
     }
 }
 
-/* 46 */
+ 
 {
-    "_id" : ObjectId("58140e1f0627cb00a8be801f"),
     "name" : "Kokir Market",
     "line" : "bavet-phnompenh",
     "value" : "kokir market",
@@ -642,9 +596,8 @@
     }
 }
 
-/* 47 */
+ 
 {
-    "_id" : ObjectId("58140e1f0627cb00a8be8020"),
     "name" : "Kien Svay",
     "line" : "bavet-phnompenh",
     "value" : "kien svay",
@@ -656,9 +609,8 @@
     }
 }
 
-/* 48 */
+ 
 {
-    "_id" : ObjectId("58140e1f0627cb00a8be8021"),
     "name" : "Phnom Penh",
     "line" : "bavet-phnompenh",
     "value" : "phnom penh",
@@ -670,13 +622,51 @@
     }
 }
 
-/* 49 */
+ 
 {
-    "_id" : ObjectId("581411510627cb00a8be8022"),
+    "name" : "Bavet",
+    "line" : "bavet-phnompenh",
+    "value" : "bavet",
+    "order" : 17,
+    "i18n" : {
+        "kh" : {
+            "name" : "បាវិត"
+        }
+    }
+}
+
+ 
+{
+    "name" : "Chiphu",
+    "line" : "bavet-phnompenh",
+    "value" : "chiphu",
+    "order" : 16,
+    "i18n" : {
+        "kh" : {
+            "name" : "​ជីភូ "
+        }
+    }
+}
+
+ 
+{
+    "name" : "Prasaut",
+    "line" : "bavet-phnompenh",
+    "value" : "prasaut",
+    "order" : 15,
+    "i18n" : {
+        "kh" : {
+            "name" : "​ប្រសូតិ  "
+        }
+    }
+}
+
+ 
+{
     "name" : "Krong Svay Rieng",
-    "line" : "svayrieng-phnompenh",
+    "line" : "bavet-phnompenh",
     "value" : "krong svay rieng",
-    "order" : 1,
+    "order" : 14,
     "i18n" : {
         "kh" : {
             "name" : "ក្រុុង​ស្វាយ​រៀង  "
@@ -684,16 +674,171 @@
     }
 }
 
-/* 50 */
+ 
 {
-    "_id" : ObjectId("581411510627cb00a8be8023"),
     "name" : "Svay Rieng University",
-    "line" : "svayrieng-phnompenh",
+    "line" : "bavet-phnompenh",
     "value" : "svay rieng university",
-    "order" : 2,
+    "order" : 13,
     "i18n" : {
         "kh" : {
             "name" : "​សាកល​វិទ្យា​ល័យស្វាយ​រៀង "
+        }
+    }
+}
+
+ 
+{
+    "name" : "Svay Chrum Market",
+    "line" : "bavet-phnompenh",
+    "value" : "svay chrum market",
+    "order" : 12,
+    "i18n" : {
+        "kh" : {
+            "name" : "ផ្សារ​ស្វាយ​ជ្រំ  "
+        }
+    }
+}
+
+ 
+{
+    "name" : "Kraol Kou",
+    "line" : "bavet-phnompenh",
+    "value" : "kraol kou",
+    "order" : 11,
+    "i18n" : {
+        "kh" : {
+            "name" : "​ក្រោល​គោ "
+        }
+    }
+}
+
+ 
+{
+    "name" : "Kor Andaeuk Market",
+    "line" : "bavet-phnompenh",
+    "value" : "kor andaeuk market",
+    "order" : 10,
+    "i18n" : {
+        "kh" : {
+            "name" : "​ផ្សារ​ក​អណ្ដើក "
+        }
+    }
+}
+
+ 
+{
+    "name" : "Kampong Trabeck",
+    "line" : "bavet-phnompenh",
+    "value" : "kampong trabeck",
+    "order" : 9,
+    "i18n" : {
+        "kh" : {
+            "name" : "​​កំពង់​ត្របែក​ "
+        }
+    }
+}
+
+ 
+{
+    "name" : "Lvea Market",
+    "line" : "bavet-phnompenh",
+    "value" : "lvea market",
+    "order" : 8,
+    "i18n" : {
+        "kh" : {
+            "name" : "​ផ្សារ​ល្វា "
+        }
+    }
+}
+
+ 
+{
+    "name" : "Kampong Soeng Market",
+    "line" : "bavet-phnompenh",
+    "value" : "kampong soeng market",
+    "order" : 7,
+    "i18n" : {
+        "kh" : {
+            "name" : "​ផ្សារ​កំពង់​សឹង "
+        }
+    }
+}
+
+ 
+{
+    "name" : "Neak Loeurng",
+    "line" : "bavet-phnompenh",
+    "value" : "neak loeurng",
+    "order" : 6,
+    "i18n" : {
+        "kh" : {
+            "name" : "អ្នកលឿង "
+        }
+    }
+}
+
+ 
+{
+    "name" : "Som Roeng Thom Market",
+    "line" : "bavet-phnompenh",
+    "value" : "somroeng thom market",
+    "order" : 5,
+    "i18n" : {
+        "kh" : {
+            "name" : "ផ្សារ​សំរោង​ធំ​ "
+        }
+    }
+}
+
+ 
+{
+    "name" : "Sdau Danlaeng Pagoda",
+    "line" : "bavet-phnompenh",
+    "value" : "sdau danlaeng pagoda",
+    "order" : 4,
+    "i18n" : {
+        "kh" : {
+            "name" : "វត្ត​ស្ដៅ​កន្លែង "
+        }
+    }
+}
+
+ 
+{
+    "name" : "Kokir Market",
+    "line" : "bavet-phnompenh",
+    "value" : "kokir market",
+    "order" : 3,
+    "i18n" : {
+        "kh" : {
+            "name" : "ផ្សារគគីរ "
+        }
+    }
+}
+
+ 
+{
+    "name" : "Kien Svay",
+    "line" : "bavet-phnompenh",
+    "value" : "kien svay",
+    "order" : 2,
+    "i18n" : {
+        "kh" : {
+            "name" : "កៀន​ស្វាយ "
+        }
+    }
+}
+
+ 
+{
+    "name" : "Phnom Penh",
+    "line" : "bavet-phnompenh",
+    "value" : "phnom penh",
+    "order" : 1,
+    "i18n" : {
+        "kh" : {
+            "name" : "ភ្នំពេញ "
         }
     }
 }
